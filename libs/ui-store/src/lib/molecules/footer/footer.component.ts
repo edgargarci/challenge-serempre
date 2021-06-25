@@ -1,3 +1,5 @@
+import { AmountService } from './../../../../../../apps/store-serempre/src/app/shared/services/amount.service';
+import { Observable } from 'rxjs';
 import { Component, Input, OnInit } from '@angular/core';
 import { Features } from '../../interfaces/features.interface';
 @Component({
@@ -15,18 +17,12 @@ export class FooterComponent implements OnInit {
     this._features = value;
   }
 
-  private _amount: any;
-  @Input()
-  get amount(): number {
-    return this._amount;
-  }
-  set amount(value) {
-    this._amount = value;
+
+  public cost:any;
+  constructor(private _AmountService: AmountService) {
+    this._AmountService.amount(0);
+    this.cost = _AmountService.getMasAmount()
   }
 
-  constructor() {}
-
-  ngOnInit(): void {
-    console.log(this._amount);
-  }
+  ngOnInit(): void {}
 }

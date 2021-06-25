@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { InfoTabs } from 'libs/ui-store/src/lib/interfaces/infoTabs.interface';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
@@ -6,11 +7,13 @@ import { InfoService } from '../../shared/services/info.service';
 import { SpecificationsService } from '../../shared/services/specifications.service';
 import { ActivatedRoute } from '@angular/router';
 import { ImagesService } from '../../shared/services/images.service';
+import { AmountService } from '../../shared/services/amount.service';
 
 @Component({
   selector: 'app-serempre-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
+  providers: [AmountService],
 })
 export class ProductComponent {
   public idProduct: string =
@@ -20,13 +23,18 @@ export class ProductComponent {
   public infoTabs: Array<InfoTabs> = [];
   public images: Array<string> = [];
 
+  public cost = 200;
+
   constructor(
     private _SpecificationsService: SpecificationsService,
     private _InfoService: InfoService,
     protected httpClient: HttpClient,
     private activatedRoute: ActivatedRoute,
-    private _ImagesService: ImagesService
+    private _ImagesService: ImagesService,
+    private _AmountService: AmountService
   ) {
+    this._AmountService.amount(this.cost);
+
     this.getSpecification();
     this.getInfoTabs();
     this.getImages();
@@ -67,5 +75,7 @@ export class ProductComponent {
     );
   }
 
-  OnInit() {}
+  ngOnChanges() {
+    this._AmountService.amount(this.cost);
+  }
 }
