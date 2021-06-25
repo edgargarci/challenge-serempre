@@ -1,0 +1,19 @@
+<footer class="d-flex">
+
+  <section class="content-footer d-flex align-items-center justify-content-space-between">
+    <div class="features d-flex">
+      <section *ngFor="let i of features">
+        <app-serempre-feature [featureInfo]="i"></app-serempre-feature>
+      </section>
+    </div>
+
+    <div class="price-buy d-flex align-items-center justify-content-center">
+      <div class="price-bold">{{amount | currency}}<br>
+        <a href="#" class="">Need financing? Learn more</a>
+      </div>
+      <app-serempre-button [textButton]="'Buy'"></app-serempre-button>
+    </div>
+
+  </section>
+
+</footer>

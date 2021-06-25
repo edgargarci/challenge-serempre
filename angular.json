@@ -19,7 +19,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "apps/store-serempre/src/favicon.ico",
-              "apps/store-serempre/src/assets"
+              "apps/store-serempre/src/assets",
+              "apps/store-serempre/src/app/shared/api"
             ],
             "styles": ["apps/store-serempre/src/styles.scss"],
             "scripts": []
@@ -116,6 +117,31 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/store-serempre-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "ui-store": {
+      "projectType": "library",
+      "root": "libs/ui-store",
+      "sourceRoot": "libs/ui-store/src",
+      "prefix": "app-serempre",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui-store"],
+          "options": {
+            "jestConfig": "libs/ui-store/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui-store/src/**/*.ts",
+              "libs/ui-store/src/**/*.html"
+            ]
           }
         }
       }

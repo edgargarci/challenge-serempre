@@ -1,0 +1,18 @@
+[
+  {
+    "espName": "Dimensions",
+    "description": "76.8 x 43.8 x 34.7 mm (earbuds and charging case)"
+  },
+  { "espName": "USB Standard", "description": "USB-C" },
+  { "espName": "Power supply", "description": "Sennheiser 7mm dynamic driver" },
+  {
+    "espName": "Frequency response (Microphone)",
+    "description": "100 Hz to 10 kHz"
+  },
+  { "espName": "Frequency response", "description": "5 - 21,000 Hz" },
+  {
+    "espName": "Noise cancellation",
+    "description": "Single-Mic ANC per earbud side"
+  }
+]
+

@@ -1,0 +1,13 @@
+<nav class="info-names">
+  <ul>
+    <li *ngFor="let tabNames of infoTabs; let i = index">
+      <input type="radio" name="tabs-info" [id]="'info-'+i" (click)="showInfo(tabNames.info)" [checked]="i == 0" />
+      <label [for]="'info-'+i">{{tabNames.nameTab}}</label>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="text-info m-b-48px">
+  {{info}}
+</div>

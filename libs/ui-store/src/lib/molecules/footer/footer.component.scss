@@ -1,0 +1,86 @@
+:host {
+  position: sticky;
+  bottom: 0;
+  footer {
+    min-height: 152px;
+    background-color: #f5f5f7;
+    border-top: 1px solid #d2d2d7;
+  }
+}
+
+.price-bold {
+  margin-right: 32px;
+  font-family: circular-bold, Courier, monospace;
+  font-size: 28px;
+  color: #111111;
+  text-align: right;
+  line-height: 22px;
+  a {
+    font-size: 14px;
+    color: #6b7280;
+    font-family: circular-book, Courier, monospace;
+  }
+}
+
+.price-buy {
+  min-width: 330px;
+  margin-left: 20px;
+}
+.features {
+  section {
+    margin-right: 32px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content-footer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content-footer {
+    padding: 0 32px;
+    justify-content: flex-end;
+    height: 182px;
+  }
+  .features {
+    display: none;
+  }
+  .price-buy {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .price-bold {
+    margin-right: 0;
+  }
+  app-serempre-button {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  ::ng-deep {
+    .feature {
+      width: auto;
+      p {
+        display: none;
+      }
+    }
+  }
+  .features {
+    flex-direction: column;
+    height: 64px;
+    justify-content: space-between;
+  }
+  .content-footer {
+    padding: 0 32px;
+  }
+}
+@media (min-width: 768px) {
+  .content-footer {
+    padding: 0 108px;
+  }
+}

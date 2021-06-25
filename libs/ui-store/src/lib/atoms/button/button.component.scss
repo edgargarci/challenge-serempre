@@ -1,0 +1,20 @@
+button {
+  width: 113px;
+  height: 56px;
+  color: #fff;
+  font-size: 16px;
+  font-family: circular-bold, Courier, monospace;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #1e96d4;
+  &:hover {
+    background-color: #66beeb;
+  }
+  &:focus {
+    border: 3px solid #d8dce0;
+  }
+}

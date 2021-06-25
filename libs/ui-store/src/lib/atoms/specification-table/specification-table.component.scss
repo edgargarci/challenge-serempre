@@ -1,0 +1,31 @@
+.item-spec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #111;
+  border-top: 1px solid #eeeff2;
+  line-height: 22px;
+  &:last-child {
+    border-bottom: 1px solid #eeeff2;
+  }
+}
+
+.name {
+  font-family: 'circular-medium', Courier, monospace;
+}
+
+.describe {
+  font-family: 'circular-book', Courier, monospace;
+}
+
+.specifications{
+  margin-bottom: 96px;
+}
+@media (max-width: 768px) {
+  .describe {
+    width: 100%;
+  }
+}

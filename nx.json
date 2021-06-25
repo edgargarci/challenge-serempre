@@ -25,6 +25,9 @@
     "store-serempre-e2e": {
       "tags": [],
       "implicitDependencies": ["store-serempre"]
+    },
+    "ui-store": {
+      "tags": []
     }
   }
 }

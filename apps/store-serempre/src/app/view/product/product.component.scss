@@ -1,0 +1,31 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  :host {
+    padding: 50px 10px 96px 10px;
+  }
+}
+@media (min-width: 768px) and(max-width: 1280px) {
+  :host {
+    padding: 0 112px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :host {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+  }
+
+  .left {
+    max-width: 592px;
+    position: sticky;
+    top: 30px;
+    height: 650px;
+  }
+
+  .right {
+    max-width: 592px;
+    width: 100%;
+    padding-left: 33px;
+  }
+}

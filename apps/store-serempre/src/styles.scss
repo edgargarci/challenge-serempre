@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  * {
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+@font-face {
+  font-family: circular-bold;
+  src: url('./assets/fonts/Circular-Std-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: circular-book;
+  src: url('./assets/fonts/Circular-Std-Book.otf');
+}
+
+@font-face {
+  font-family: circular-medium;
+  src: url('./assets/fonts/Circular-Std-Medium.otf');
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.title-main {
+  font-family: circular-medium, Courier, monospace;
+  font-size: 19px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.text-red {
+  color: #cb253c;
+}
+
+.text-gray-mini {
+  color: #6b7280;
+}
+.text-min {
+  font-size: 14px;
+  font-family: circular-book, Courier, monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.big-title {
+  color: #111;
+  font-family: circular-bold, Courier, monospace;
+  font-size: 33px;
+  font-weight: 700;
+}
+.text-gray {
+  color: #6b7280;
+  font-size: 24px;
+  font-family: circular-book, Courier, monospace;
+  font-weight: 400;
+}
+
+.m-t-8px {
+  margin-top: 8px;
+}
+
+.m-b-48px {
+  margin-bottom: 48px;
+}

@@ -1,0 +1,10 @@
+<app-serempre-big-img [srcImg]="activeImg"></app-serempre-big-img>
+
+<div class="gallery-mini d-flex justify-content-space-between">
+
+  <span *ngFor="let img of images; let w = index">
+    <input type="radio" name="tabs" [id]="'cont-'+w" (click)="showImg(img)" [checked]="w == 0" />
+    <app-serempre-thumb-img class="mini-image" [forName]="'cont-'+w" [srcImg]="img"></app-serempre-thumb-img>
+  </span>
+
+</div>

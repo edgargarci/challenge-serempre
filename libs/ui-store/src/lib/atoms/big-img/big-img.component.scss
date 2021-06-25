@@ -1,0 +1,16 @@
+:host {
+  height: 337px;
+  display: flex;
+  margin-bottom: 16px;
+  width: 100%;
+  border: 2px solid #eeeff2;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  :host {
+    height: 183px;
+  }
+}
