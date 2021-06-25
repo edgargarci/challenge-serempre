@@ -11,7 +11,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/apps/store-serempre",
+            "outputPath": "dist",
             "index": "apps/store-serempre/src/index.html",
             "main": "apps/store-serempre/src/main.ts",
             "polyfills": "apps/store-serempre/src/polyfills.ts",
