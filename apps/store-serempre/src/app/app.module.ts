@@ -8,8 +8,9 @@ import { ProductComponent } from './view/product/product.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AmountService } from './shared/services/amount.service';
+import { ChardViewComponent } from './view/chard-view/chard-view.component';
 @NgModule({
-  declarations: [AppComponent, ProductComponent],
+  declarations: [AppComponent, ProductComponent, ChardViewComponent],
   imports: [BrowserModule, UiStoreModule, AppRoutingModule, HttpClientModule],
   providers: [AmountService],
   bootstrap: [AppComponent],

@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+
+    <li *ngFor="let pic of photos">
+
+      <img [src]="pic.url">
+      <span>{{pic.title}}</span>
+    </li>
+  </ul>
+
+</nav>

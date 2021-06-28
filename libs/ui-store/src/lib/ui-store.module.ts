@@ -9,6 +9,7 @@ import { ThumbImgComponent } from './atoms/thumb-img/thumb-img.component';
 import { ImageGaleryComponent } from './molecules/image-galery/image-galery.component';
 import { BigImgComponent } from './atoms/big-img/big-img.component';
 import { InfoTabsComponent } from './molecules/info-tabs/info-tabs.component';
+import { CardImageComponent } from './molecules/card-image/card-image.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -21,8 +22,9 @@ import { InfoTabsComponent } from './molecules/info-tabs/info-tabs.component';
     ThumbImgComponent,
     ImageGaleryComponent,
     BigImgComponent,
-    InfoTabsComponent
+    InfoTabsComponent,
+    CardImageComponent
   ],
-  exports:[ButtonComponent, FooterComponent, HeaderComponent, FeatureComponent, SpecificationTableComponent, ThumbImgComponent, ImageGaleryComponent, BigImgComponent, InfoTabsComponent]
+  exports:[ButtonComponent, FooterComponent, HeaderComponent, FeatureComponent, SpecificationTableComponent, ThumbImgComponent, ImageGaleryComponent, BigImgComponent, InfoTabsComponent, CardImageComponent]
 })
 export class UiStoreModule {}
