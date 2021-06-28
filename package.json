@@ -2,9 +2,12 @@
   "name": "app-serempre",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "ng": "nx",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build --prod",
